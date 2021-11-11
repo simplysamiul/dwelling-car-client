@@ -2,8 +2,7 @@ import React from 'react';
 import './MoreCar.css';
 
 const MoreCar = (props) => {
-    
-    const {car_name, car_img, price, mileage, Transmission} = props.moreCar.car;
+    const {car_name, car_img, price, mileage, Transmission} = props.car;
     return (
         <div>
             <div className="car-container">

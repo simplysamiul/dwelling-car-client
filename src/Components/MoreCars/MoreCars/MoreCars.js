@@ -6,14 +6,13 @@ import './MoreCars.css';
 
 const MoreCars = () => {
     const [moreCars, setMoreCars] = useState([]);
-    console.log(moreCars);
     useEffect(()=>{
         fetch("https://guarded-taiga-19552.herokuapp.com/store/more")
         .then(res=>res.json())
         .then(data => setMoreCars(data))
     },[]);
     return (
-        <div class="more-area">
+        <div className="more-area">
             <Menubar />
             <img src={bannerOne} alt="" />
             <h1>Our <span>Store</span></h1>

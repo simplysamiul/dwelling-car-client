@@ -6,12 +6,12 @@ import './Menubar.css';
 
 const Menubar = () => {
     return (
-       <div className="menu-main sticky-top">
+       <div className="menu-main">
            <div className="social-icon">
-           <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
-           <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
-           <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
-           <a href="https://dribbble.com"><i class="fab fa-dribbble"></i></a>
+           <a href="https://www.facebook.com/"><i className="fab fa-facebook"></i></a>
+           <a href="https://twitter.com/"><i className="fab fa-twitter"></i></a>
+           <a href="https://instagram.com/"><i className="fab fa-instagram"></i></a>
+           <a href="https://dribbble.com"><i className="fab fa-dribbble"></i></a>
            </div>
             <Navbar expand="lg">
             <Container>
