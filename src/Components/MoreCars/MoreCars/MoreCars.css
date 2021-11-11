@@ -1,0 +1,12 @@
+.more-area img{
+    width: 100%;
+}
+.more-area h1{
+    font-family: 'Zen Antique', serif;
+    margin: 50px;
+    text-align: center;
+    font-weight: 600;
+}
+.more-area span{
+    color: #c02e2e;
+}

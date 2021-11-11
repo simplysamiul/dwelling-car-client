@@ -1,8 +1,9 @@
 import React from 'react';
-import './Car.css';
+import './MoreCar.css';
 
-const Car = ({car}) => {
-    const {car_name, car_img, price, mileage, Transmission} =  car;
+const MoreCar = (props) => {
+    
+    const {car_name, car_img, price, mileage, Transmission} = props.moreCar.car;
     return (
         <div>
             <div className="car-container">
@@ -34,4 +35,4 @@ const Car = ({car}) => {
     );
 };
 
-export default Car;
+export default MoreCar;

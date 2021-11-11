@@ -1,0 +1,26 @@
+.cars-area{
+    padding: 100px 50px;
+    background-image: url('../../../../resource/cars-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.cars-contianer{
+    background: white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+
+
+@media only screen and (max-width: 650px) {
+    .cars-contianer{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 651px){
+    .cars-contianer{
+        grid-template-columns: repeat(2,1fr);
+    }
+}

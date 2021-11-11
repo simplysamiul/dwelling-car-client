@@ -1,3 +1,20 @@
+.social-icon{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+    padding: 15px;
+    border-bottom: 0.2px solid lightgray;
+    border-width: 0.5px;
+}
+.social-icon a{
+    margin: 10px;
+    color: white;
+    transition: .3s ease-in-out;
+}
+.social-icon i:hover{
+    color: #d02d2d;
+    cursor: pointer;
+}
 .menu-main{
     background: linear-gradient(280deg,rgb(13, 21, 38), 
     rgb(90, 37, 43));
@@ -21,4 +38,11 @@
     padding: 5px 10px;
     border-radius: 5px;
     border: 1px solid rgb(13, 21, 38);
+}
+
+
+@media only screen and (max-width: 800px){
+    .social-icon{
+        display: none;
+    }
 }

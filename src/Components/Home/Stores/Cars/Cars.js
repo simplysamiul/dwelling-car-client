@@ -1,9 +1,24 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import Car from '../Car/Car';
+import './Cars.css';
 
 const Cars = () => {
+    const [cars, setCars] = useState([]);
+    useEffect(()=>{
+    fetch("https://guarded-taiga-19552.herokuapp.com/store")
+    .then(res => res.json())
+    .then(data => setCars(data))
+    },[]);
     return (
-        <div>
-            
+        <div className="cars-area">
+            <div className="cars-contianer">
+                {
+                    cars.map(car => <Car
+                    key={car.number}
+                    car={car}
+                    />)
+                }
+            </div>
         </div>
     );
 };

@@ -1,12 +1,19 @@
 import React from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import menuLogo from '../../../resource/logo/menu-logo.png';
 import { Navbar, Container, Nav } from "react-bootstrap";
 import './Menubar.css';
 
 const Menubar = () => {
     return (
-        <Navbar className="menu-main" expand="lg">
+       <div className="menu-main sticky-top">
+           <div className="social-icon">
+           <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+           <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+           <a href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+           <a href="https://dribbble.com"><i class="fab fa-dribbble"></i></a>
+           </div>
+            <Navbar expand="lg">
             <Container>
             <Navbar.Brand>
             <img src={menuLogo} width="60" height="60" className="d-inline-block align-top" alt=""/>
@@ -22,6 +29,7 @@ const Menubar = () => {
                 </Navbar.Collapse>
             </Container>
         </Navbar>
+       </div>
     );
 };
 
