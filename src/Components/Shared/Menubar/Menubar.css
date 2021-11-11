@@ -1,0 +1,24 @@
+.menu-main{
+    background: linear-gradient(280deg,rgb(13, 21, 38), 
+    rgb(90, 37, 43));
+    border-bottom: 2px solid black;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+}
+.menu-items a{
+    margin-left: 15px;
+    font-family: 'Zen Antique', serif;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+.menu-items a:hover{
+    color: white;
+    border-bottom: 1px solid ;
+}
+.login-button{
+    background: #da1717;
+    border-bottom: none !important;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid rgb(13, 21, 38);
+}
