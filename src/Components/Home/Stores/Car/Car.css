@@ -14,8 +14,7 @@
 }
 .car-info{
     text-align: center;
-    font-family: 'Zen Antique', serif;
-    
+    font-family: 'Zen Antique', serif;  
 }
 .car-info h5{
     font-size: 18px;
@@ -25,6 +24,10 @@
 .car-info h5:hover{
     cursor: pointer;
     color: #bf2626;
+}
+.car-price{
+    color: #bf2626;
+    font-weight: 600;
 }
 .car-info p{
     padding-bottom: 20px;

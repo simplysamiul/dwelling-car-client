@@ -10,7 +10,7 @@ const Car = ({car}) => {
                 <p className="sale-tag">NEW</p>
                 <div className="car-info">
                     <h5>{car_name}</h5>
-                    <p>$ {price}</p>
+                    <p className="car-price">$ {price}</p>
                 </div>
                 <div className="car-feature">
                     <div className="feature-gap">

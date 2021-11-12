@@ -1,0 +1,23 @@
+.service-container{
+    border-right: 1px solid #303030;
+    padding-right: 25px;
+}
+.service-img{
+    margin-bottom: 50px;
+    text-align: center;
+}
+.service-info h4{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.service-info p{
+    color: gray;
+    text-align: center;
+}
+@media only screen and (max-width: 650px){
+    .service-container{
+        border-right:none;
+    }
+}
