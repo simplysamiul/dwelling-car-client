@@ -26,7 +26,7 @@ const MoreCar = (props) => {
                     <p>2016</p>
                     </div>
                 </div>
-                <div className="car-order">
+                <div className="more-order">
                 <button><span>Booking</span> <i className="far fa-calendar-alt"></i></button>
                 </div>
             </div>

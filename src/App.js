@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Home from './Components/Home/Home/Home';
 import MoreCars from './Components/MoreCars/MoreCars/MoreCars';
+import Footer from './Components/Shared/Footer/Footer';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <MoreCars/>
           </Route>
         </Switch>
+        <Footer />
       </Router>
     </div>
   );

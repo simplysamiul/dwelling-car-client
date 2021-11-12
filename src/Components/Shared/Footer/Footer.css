@@ -1,0 +1,99 @@
+.footer-area{
+    border-top: 5px solid #d51a1a;
+    background: #020306;
+    font-family: 'Zen Antique', serif;
+}
+.footer-container{
+    padding: 80px 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+}
+.footer-common{
+    margin: 20px 0 50px 0;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 0.1rem;
+    
+}
+.show-room p{
+    color: lightgray;
+    font-size: 15px;
+}
+.show-room i{
+    color: #d51a1a;
+    padding-right: 10px;
+}
+.advisor h2{
+    text-align: center;
+}
+.advisor ul{
+    list-style-type: none;
+    color: lightgray;
+}
+.advisor ul li{
+    margin-top: 15px;
+}
+.advisor i{
+    font-size: 8px;
+    color: #d51a1a;
+    padding-right: 10px;
+}
+.delivery a{
+    display: block;
+    margin-top: 15px;
+    color: lightgray;
+}
+.delivery a:hover{
+    color: lightgray;
+    text-decoration: white;
+}
+
+/* Copy Right Area */
+.copy-right{
+    border-top: 3px solid #433939;
+    background-image: url(../../../resource/cars-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.copy-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.copy-container p{
+    color: white;
+    font-family: 'Zen Antique', serif;
+}
+.margin-bottom{
+    margin-bottom: 20px;
+}
+.social-icon-footer{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+    padding: 15px;
+    border-bottom: 0.2px solid lightgray;
+    border-width: 0.5px;
+}
+.social-icon-footer a{
+    margin: 10px;
+    color: white;
+    transition: .3s ease-in-out;
+}
+.social-icon-footer i:hover{
+    color: #d02d2d;
+    cursor: pointer;
+}
+@media only screen and (max-width: 950px){
+    .footer-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .copy-container{
+        flex-direction: column;
+    }   
+}

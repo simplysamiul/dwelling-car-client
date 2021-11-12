@@ -1,0 +1,27 @@
+.more-order{
+    text-align: center;
+}
+.more-order button{
+    border: none;
+    background: #0d1526;
+    color: white;
+    padding: 15px 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'Zen Antique', serif;
+    border-bottom: 5px solid #d51616;
+    transition: 0.5s ease-in-out;
+}
+.more-order button:hover{
+    background: #d51616;
+}
+.more-order span{
+    color: white !important;
+    border-right:  0.5px solid lightgray;
+    letter-spacing: 0.1rem;
+    padding-right: 10px;
+}
+.more-order i{
+    padding-left: 10px;
+}

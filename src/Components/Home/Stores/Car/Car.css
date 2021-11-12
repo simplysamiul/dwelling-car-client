@@ -50,16 +50,16 @@
     border: none;
     background: #0d1526;
     color: white;
-    padding: 8px 15px;
+    padding: 15px 20px;
     font-weight: 600;
     text-transform: uppercase;
-    border-radius: 30px;
-    transition: 0.3s ease-in-out;
     font-size: 12px;
     font-family: 'Zen Antique', serif;
+    border-bottom: 5px solid #d51616;
+    transition: 0.5s ease-in-out;
 }
 .car-order button:hover{
-    background: #831d29;
+    background: #d51616;
 }
 .car-order span{
     border-right:  0.5px solid lightgray;

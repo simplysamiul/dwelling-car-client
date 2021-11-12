@@ -8,11 +8,11 @@ const Menubar = () => {
     return (
        <div className="menu-main">
            <div className="social-icon">
-           <a href="https://www.facebook.com/"><i className="fab fa-facebook"></i></a>
-           <a href="https://twitter.com/"><i className="fab fa-twitter"></i></a>
-           <a href="https://instagram.com/"><i className="fab fa-instagram"></i></a>
-           <a href="https://dribbble.com"><i className="fab fa-dribbble"></i></a>
-           </div>
+                <a href="https://www.facebook.com/"><i className="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/"><i className="fab fa-twitter"></i></a>
+                <a href="https://instagram.com/"><i className="fab fa-instagram"></i></a>
+                <a href="https://dribbble.com"><i className="fab fa-dribbble"></i></a>
+            </div>
             <Navbar expand="lg">
             <Container>
             <Navbar.Brand>
