@@ -1,0 +1,78 @@
+.details-area{
+    font-family: 'Zen Antique', serif;
+}
+.details-area img{
+    width: 100%;
+}
+.details-container{
+    background: #F5F5F5;
+    padding: 30px;
+}
+.details-info{
+    padding: 50px 20px;
+    background: white;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    box-shadow: 5px 15px 10px #a5a5a5;
+}
+.info-top{
+    margin-bottom: 50px;
+}
+.info-top h1{
+    
+}
+.contact-icon{
+    font-size: 12px;
+    display: flex;
+    border-bottom: 1px solid lightgray;
+}
+.contact-icon p{
+    border-bottom: none !important;
+    color: gray !important;
+}
+.contact-icon i{
+    color: #d01d1d !important;
+}
+.car-img h4{
+    margin: 30px 0;
+    color: #fb4e4a;
+    font-weight: 600;
+    text-align: center;
+}
+.info-top h3{
+    text-align: center;
+    margin-top: 50px;
+}
+.info-top p{
+    border: none !important;
+    color: gray !important;
+    font-weight: 500 !important;
+    margin-bottom: 50px !important;
+}
+
+.section-title{
+    background-color: #FBE122;
+    padding: 10px;
+    text-align: center ;
+}
+.details-info p{
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 5px;
+    color: #d01d1d;
+    font-weight: 600;
+    padding-left: 15px;
+    padding-top: 20px;
+}
+.full-details{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid #e1e0e0;
+    padding: 20px;
+}
+
+
+@media only screen and (max-width: 800px){
+    .details-info{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

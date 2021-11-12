@@ -1,9 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Car.css';
 
 const Car = ({car}) => {
-    const {car_name, car_img, price, mileage, Transmission} =  car;
-    return (
+    const {car_name, car_img, price, mileage, Transmission, _id} = car;    return (
         <div>
             <div className="car-container">
                 <img src={car_img} alt="" />
@@ -27,7 +27,9 @@ const Car = ({car}) => {
                     </div>
                 </div>
                 <div className="car-order">
+                <Link to={`/boking_order/${_id}`}>
                 <button><span>Booking</span> <i className="far fa-calendar-alt"></i></button>
+                </Link>
                 </div>
             </div>
         </div>

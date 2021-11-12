@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Menubar from '../../Shared/Menubar/Menubar';
 import bannerOne from '../../../resource/cars-bg.jpg';
 import MoreCar from '../MoreCar/MoreCar'; 
 import './MoreCars.css';
@@ -13,7 +12,6 @@ const MoreCars = () => {
     },[]);
     return (
         <div className="more-area">
-            <Menubar />
             <img src={bannerOne} alt="" />
             <h1>Our <span>Store</span></h1>
             <div className="cars-area">

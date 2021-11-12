@@ -26,11 +26,11 @@ const Footer = () => {
                 </div>
                 <div className="delivery">
                         <h2 className="footer-common">Delivery Info</h2>
-                        <a href="">Privacy Policy</a>
-                        <a href="">Terms &#38; Condition</a>
-                        <a href="">Delivery Information</a>
-                        <a href="">Contact Us</a>
-                        <a href="">Shipment</a>
+                        <a href="home">Privacy Policy</a>
+                        <a href="home">Terms &#38; Condition</a>
+                        <a href="home">Delivery Information</a>
+                        <a href="home">Contact Us</a>
+                        <a href="home">Shipment</a>
                 </div>
             </div>
         </div>

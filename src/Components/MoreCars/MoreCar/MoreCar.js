@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './MoreCar.css';
 
 const MoreCar = (props) => {
-    const {car_name, car_img, price, mileage, Transmission} = props.car;
+    const {car_name, car_img, price, mileage, Transmission, _id} = props.car;
     return (
         <div>
             <div className="car-container">
@@ -10,7 +11,7 @@ const MoreCar = (props) => {
                 <p className="sale-tag">NEW</p>
                 <div className="car-info">
                     <h5>{car_name}</h5>
-                    <p>$ {price}</p>
+                    <p className="car-price">$ {price}</p>
                 </div>
                 <div className="car-feature">
                     <div className="feature-gap">
@@ -27,7 +28,9 @@ const MoreCar = (props) => {
                     </div>
                 </div>
                 <div className="more-order">
+                <Link to={`/boking_order/${_id}`}>
                 <button><span>Booking</span> <i className="far fa-calendar-alt"></i></button>
+                </Link>
                 </div>
             </div>
         </div>

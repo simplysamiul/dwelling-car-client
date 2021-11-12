@@ -1,0 +1,20 @@
+.modal-container{
+    font-family: 'Zen Antique', serif;
+}
+.order-button{
+    background: #0d1526;
+    border: none;
+    width: 100%;
+    padding: 18px 0;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom: 5px solid #d80b0b;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+.order-button:hover{
+    background: #d80b0b !important;
+}
