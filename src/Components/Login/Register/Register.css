@@ -1,0 +1,41 @@
+.regestration-area{
+    background-color: lightgray;
+    padding: 50px;
+    font-family: 'Zen Antique', serif;
+}
+.register-container{
+    border-radius: 10px;
+    padding: 50px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    align-items: center;
+    border: 1px solid lightgray;
+    box-shadow: 5px 15px 10px gray;
+}
+.regester-form h2{
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.login-link{
+    display: flex;
+    justify-content: center;
+}
+.regester-form input{
+    display: block;
+    margin: 20px;
+    width: 80%;   
+}
+
+@media only screen and (max-width: 700px){
+    .register-container{
+        grid-template-columns: 100%;
+    }
+    .regester-form input{
+        width: 90%;
+    }
+    .register-img{
+        display: none;
+    }
+}

@@ -24,7 +24,7 @@ const CarDetails = () => {
                     <div className="car-img">
                         <img src={car_img} alt="" />
                         <h4>Price : $ {price} /-</h4>
-                        <BookingModal  />
+                        <BookingModal details={details}  />
                     </div>
                     <div className="car-details">
                         <div className="info-top">

@@ -18,3 +18,22 @@
 .order-button:hover{
     background: #d80b0b !important;
 }
+
+/* Modal Body */
+.modal-area{
+    font-family: 'Zen Antique', serif;
+    text-align: center;
+}
+.modal-area h4{
+    color: #b81a1a;
+}
+.modal-area form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modal-area input{
+    margin: 15px;
+    display: block;
+    width: 80%;
+}

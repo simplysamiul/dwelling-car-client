@@ -9,6 +9,8 @@ import MoreCars from './Components/MoreCars/MoreCars/MoreCars';
 import Footer from './Components/Shared/Footer/Footer';
 import CarDetails from './Components/CarDetails/CarDetails';
 import Menubar from './Components/Shared/Menubar/Menubar';
+import Login from './Components/Login/Login/Login';
+import Register from './Components/Login/Register/Register';
 
 function App() {
   return (
@@ -27,6 +29,12 @@ function App() {
           </Route>
           <Route path="/boking_order/:id">
             <CarDetails />
+          </Route>
+          <Route path="/login">
+            <Login />
+          </Route>
+          <Route path="/register">
+            <Register />
           </Route>
         </Switch>
         <Footer />
