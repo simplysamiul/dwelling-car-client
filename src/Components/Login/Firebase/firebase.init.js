@@ -5,4 +5,4 @@ const initializeAuth =() =>{
     initializeApp(firebaseConfig);
 };
 
-export default initializeApp;
+export default initializeAuth;

@@ -11,10 +11,13 @@ import CarDetails from './Components/CarDetails/CarDetails';
 import Menubar from './Components/Shared/Menubar/Menubar';
 import Login from './Components/Login/Login/Login';
 import Register from './Components/Login/Register/Register';
+import AuthProvider from './context/AuthProvider/AuthProvider';
+import PrivateRoute from './Components/Login/PrivateRoute/PrivateRoute';
+import Dashboard from './Components/Dashboard/Dashboard/Dashboard';
 
 function App() {
   return (
-    <div className="App">
+    <AuthProvider>
       <Router>
         <Menubar />
         <Switch>
@@ -27,20 +30,23 @@ function App() {
           <Route path="/explore">
             <MoreCars/>
           </Route>
-          <Route path="/boking_order/:id">
+          <PrivateRoute path="/boking_order/:id">
             <CarDetails />
-          </Route>
+          </PrivateRoute>
           <Route path="/login">
             <Login />
           </Route>
           <Route path="/register">
             <Register />
           </Route>
+          <PrivateRoute path ="/dashboard">
+            <Dashboard />
+          </PrivateRoute>
         </Switch>
         <Footer />
       </Router>
-    </div>
+    </AuthProvider>
   );
-}
+};
 
 export default App;

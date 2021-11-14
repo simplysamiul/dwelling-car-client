@@ -3,8 +3,10 @@ import { NavLink } from 'react-router-dom';
 import menuLogo from '../../../resource/logo/menu-logo.png';
 import { Navbar, Container, Nav } from "react-bootstrap";
 import './Menubar.css';
+import useAuth from '../../../hooks/useAuth';
 
 const Menubar = () => {
+    const { user, logOut } = useAuth();
     return (
        <div className="menu-main">
            <div className="social-icon">
@@ -24,7 +26,11 @@ const Menubar = () => {
                     <NavLink style={isActive => ({color: isActive ? "red" : "white"})} to="/home">Home</NavLink>
                     <NavLink style={isActive => ({color: isActive ? "red" : "white"})} to="/explore">Explore</NavLink>
                     <NavLink style={isActive => ({color: isActive ? "red" : "white"})} to="/dashboard">Dashboard</NavLink>
-                    <NavLink className="login-button" style={isActive => ({color: isActive ? "red" : "white"})} to="/login">Log-In</NavLink>
+                   {
+                       user?.email ? <button onClick={logOut} style={{background :"white", color:"#da1717", fontWeight:"600", marginLeft:"5px", fontFamily:"'Zen Antique', serif"}} className="login-button">Log-Out</button> 
+                       :
+                       <NavLink className="login-button" style={isActive => ({color: isActive ? "red" : "white"})} to="/login">Log-In</NavLink>
+                   }
                 </Nav>
                 </Navbar.Collapse>
             </Container>
