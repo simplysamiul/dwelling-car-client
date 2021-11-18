@@ -47,7 +47,7 @@ const Orders = () => {
 
     // Delete orders
     const handeldeleteOrder = email =>{
-      const url = `http://localhost:5000/orders?email=${user.email}`
+      const url = `https://guarded-taiga-19552.herokuapp.com/orders?email=${user.email}`
       fetch(url, {
         method:"DELETE"
       })

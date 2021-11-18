@@ -16,7 +16,7 @@
     font-size: 30px;
     margin-bottom: 20px;
 }
-.make-admin input{
+.make-admin input,textarea{
     margin-top: 20px;
     width: 60%;
     padding: 5px;
