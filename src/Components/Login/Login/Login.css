@@ -1,0 +1,9 @@
+.google-button{
+    border: none;
+    background-color: hsl(0, 73%, 41%);
+    color: white;
+    font-weight: 600;
+    padding: 12px 18px;
+    margin-right: 30px;
+    border-radius: 5px
+};

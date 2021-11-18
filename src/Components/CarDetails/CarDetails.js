@@ -3,10 +3,15 @@ import './CarDetails.css';
 import bannerThree from '../../resource/details-bg.jpg';
 import { useParams } from 'react-router-dom';
 import BookingModal from './BookingModal/BookingModal';
+import { Alert } from '@mui/material';
+import Menubar from '../Shared/Menubar/Menubar';
+import Footer from '../Shared/Footer/Footer';
 
 const CarDetails = () => {
     const  { id }  = useParams();
     const [details, setDetails] = useState([]);
+    const [orderSuccess, setOrderSuccess] = useState(false);
+    
     const {car_name, engine, mileage, Transmission, car_img, price, short_desk, color, } = details;
 
     useEffect(()=>{
@@ -17,14 +22,19 @@ const CarDetails = () => {
     },[id]);
     return (
     <>
+    <Menubar />
         <div className="details-area">
            <img src={bannerThree} alt="" />
+           {orderSuccess && <div style={{marginTop:"20px"}}><Alert style={{color:"white"}} severity="success">Successful Your Order !</Alert></div>}
            <div className="details-container">
                 <div className="details-info">
                     <div className="car-img">
                         <img src={car_img} alt="" />
                         <h4>Price : $ {price} /-</h4>
-                        <BookingModal details={details}  />
+                        <BookingModal 
+                        details={details}
+                        setOrderSuccess={setOrderSuccess}
+                        />
                     </div>
                     <div className="car-details">
                         <div className="info-top">
@@ -55,6 +65,7 @@ const CarDetails = () => {
                 </div>   
             </div> 
         </div>
+        <Footer />
     </>
     );
 };

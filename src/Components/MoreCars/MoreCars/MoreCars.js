@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import bannerOne from '../../../resource/cars-bg.jpg';
+import Footer from '../../Shared/Footer/Footer';
+import Menubar from '../../Shared/Menubar/Menubar';
 import MoreCar from '../MoreCar/MoreCar'; 
 import './MoreCars.css';
 
@@ -11,6 +13,8 @@ const MoreCars = () => {
         .then(data => setMoreCars(data))
     },[]);
     return (
+        <>
+        <Menubar />
         <div className="more-area">
             <img src={bannerOne} alt="" />
             <h1>Our <span>Store</span></h1>
@@ -25,6 +29,8 @@ const MoreCars = () => {
             </div>
         </div>
         </div>
+        <Footer />
+        </>
     );
 };
 

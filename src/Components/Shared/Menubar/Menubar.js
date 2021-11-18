@@ -25,7 +25,7 @@ const Menubar = () => {
                 <Nav className="ml-auto menu-items">
                     <NavLink style={isActive => ({color: isActive ? "red" : "white"})} to="/home">Home</NavLink>
                     <NavLink style={isActive => ({color: isActive ? "red" : "white"})} to="/explore">Explore</NavLink>
-                    <NavLink style={isActive => ({color: isActive ? "red" : "white"})} to="/dashboard">Dashboard</NavLink>
+                    {user?.email && <NavLink style={isActive => ({color: isActive ? "red" : "white"})} to="/dashboard">Dashboard</NavLink>}
                    {
                        user?.email ? <button onClick={logOut} style={{background :"white", color:"#da1717", fontWeight:"600", marginLeft:"5px", fontFamily:"'Zen Antique', serif"}} className="login-button">Log-Out</button> 
                        :

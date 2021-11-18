@@ -6,9 +6,7 @@ import {
 } from "react-router-dom";
 import Home from './Components/Home/Home/Home';
 import MoreCars from './Components/MoreCars/MoreCars/MoreCars';
-import Footer from './Components/Shared/Footer/Footer';
 import CarDetails from './Components/CarDetails/CarDetails';
-import Menubar from './Components/Shared/Menubar/Menubar';
 import Login from './Components/Login/Login/Login';
 import Register from './Components/Login/Register/Register';
 import AuthProvider from './context/AuthProvider/AuthProvider';
@@ -19,7 +17,6 @@ function App() {
   return (
     <AuthProvider>
       <Router>
-        <Menubar />
         <Switch>
           <Route exact path="/">
             <Home />
@@ -43,7 +40,6 @@ function App() {
             <Dashboard />
           </PrivateRoute>
         </Switch>
-        <Footer />
       </Router>
     </AuthProvider>
   );

@@ -1,0 +1,59 @@
+.dashboard-user{
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.dashboard-user img{
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    margin: 10px;
+}
+.dashboard-user i{
+    font-size: 30px;
+    margin: 10px;
+}
+.dashboard-user p{
+    margin-top: 10px;
+    font-size: 15px;
+    color: #ffee00;
+    font-family: 'Zen Antique', serif;
+}
+.dashboard-menu a{
+    font-family: 'Zen Antique', serif;
+    display: block;
+    color: lightgray;
+    margin: 15px;
+    text-decoration: none;
+    font-family: 'Zen Antique', serif;
+    font-weight: 500;
+    border-bottom: 1px solid white;
+    padding: 10px 15px;
+    transition: 0.5s ease-in-out;
+}
+.dashboard-menu a:hover{
+    color: white;
+    background: #686868;
+    transition: 0.5s ease-in-out;
+}
+.dashboard-menu button{
+    margin: 25px;
+    border: none;
+    background:#c01717;
+    color: white;
+    font-family: 'Zen Antique', serif;
+    padding: 12px 18px;
+    transition: 0.5s ease-in-out;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+}
+.dashboard-title{
+    font-family: 'Zen Antique', serif;
+}
+.MuiPaper-elevation{
+    background: black !important;
+}
