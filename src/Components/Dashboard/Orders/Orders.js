@@ -46,13 +46,18 @@ const Orders = () => {
     },[user.email]);
 
     // Delete orders
-    const handeldeleteOrder = email =>{
-      const url = `https://guarded-taiga-19552.herokuapp.com/orders?email=${user.email}`
+    const handeldeleteOrder = id =>{
+      const url = `https://guarded-taiga-19552.herokuapp.com/orders/${id}`
       fetch(url, {
         method:"DELETE"
       })
       .then(res => res.json)
       .then(data => {
+        if(data.deletedCount){
+          alert("Are you sure ? Do you want to delete it ?");
+          const remainingOrder = orders.filter(order => order._id !== id)
+          setOrders(remainingOrder);
+      }
       });
     };
     return (
@@ -77,7 +82,7 @@ const Orders = () => {
               <StyledTableCell align="right">{row.carName}</StyledTableCell>
               <StyledTableCell align="right">{row.date}</StyledTableCell>
               <StyledTableCell align="right"><img style={{width:"80px"}} src={row.carImg} alt="" /></StyledTableCell>
-              <StyledTableCell align="right"><i onClick={()=>handeldeleteOrder(orders.email)} style={{fontSize:"25px", color:"red", cursor : "pointer"}} className="fas fa-times-circle"></i></StyledTableCell>
+              <StyledTableCell align="right"><i onClick={()=>handeldeleteOrder(row._id)} style={{fontSize:"25px", color:"red", cursor : "pointer"}} className="fas fa-times-circle"></i></StyledTableCell>
             </StyledTableRow>
           ))}
         </TableBody>
