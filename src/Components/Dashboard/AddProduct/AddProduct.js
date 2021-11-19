@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
 import Alert from '@mui/material/Alert';
+import CircularProgress from '@mui/material/CircularProgress';
 import './AddProduct.css';
 
 const AddProduct = () => {
     const { register, handleSubmit, reset } = useForm();
     const [addSuccess, setAddSuccess] = useState(false);
+    const [loading,setLoading] = useState(false);
     const onSubmit = data =>{
+        setLoading(true);
         fetch("https://guarded-taiga-19552.herokuapp.com/store/more",{
             method:"POST",
             headers:{
@@ -16,6 +19,7 @@ const AddProduct = () => {
         })
         .then(res => res.json())
         .then(data => {
+            setLoading(false);
             setAddSuccess(true);
             reset();
         })
@@ -24,7 +28,6 @@ const AddProduct = () => {
         <div className="admin-container">
             <div className="make-admin">
             <h1>Add Car</h1>
-            {addSuccess === true && <Alert style={{color:"white"}} severity="success">Add Car Successfully!</Alert>}
             <form onSubmit={handleSubmit(onSubmit)}>
             <input type="text" placeholder="car name *" {...register("car_name")} required/> <br />
             <input type="text" placeholder="engine*" {...register("engine")} required /> <br />
@@ -34,10 +37,10 @@ const AddProduct = () => {
             <input type="text" placeholder="Color*" {...register("color")} /> <br />
             <input type="text" placeholder="Car Image*" {...register("car_img")} required /> <br />
             <textarea style={{marginTop:"20px"}} rows="4" cols="32" placeholder="Description" {...register("short_desk")}></textarea> <br />
-
             <input className="btn btn-danger" type="submit" />
-            
             </form>
+            {loading===true && <div style={{textAlign:"center"}}><CircularProgress /></div>}
+            {addSuccess === true && <Alert style={{color:"white"}} severity="success">Add Car Successfully!</Alert>}
         </div>
         </div>
     );

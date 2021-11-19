@@ -1,0 +1,30 @@
+.reviews-area{
+    margin: 80px;
+    text-align: center;
+    font-family: 'Zen Antique', serif;
+}
+.reviews-area h1{
+    margin-bottom: 50px;
+    color: #0d1526;
+    font-weight: 600;
+}
+.reviews-area span{
+    color: #c02e2e;
+}
+.reviews-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+}
+
+@media only screen and (max-width: 650px){
+    .reviews-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media only screen and (max-width: 850px) and (min-width: 651px){
+    .reviews-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
