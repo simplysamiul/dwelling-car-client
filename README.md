@@ -1,8 +1,14 @@
 # Dwelling-Car's
 
+[Live-Link](https://dwelling-car.web.app/)
+
 #Details : 
 
-This website based on car seeling.Ther are are more companies car's and if you want then you can buy orders your car and buy that car.In this website 1st of all you can see home page there have almost 7 section. Those are menubar banner some car's that we are offer you some car service client's review discount offer and footer.if you login then you can see more option in the menubar those are explore dashboard and logout.If you go to the explore page there are you can see all showroom all car's listed here. In this website also have some features those are saying below : 
+This website based on car seeling.Ther are are more companies car's and if you want then you can buy orders your car and buy that car.In this website 1st of all you can see home page there have almost 7 section. Those are menubar banner some car's that we are offer you some car service client's review discount offer and footer.if you login then you can see more option in the menubar those are explore dashboard and logout.If you go to the explore page there are you can see all showroom all car's listed here. In this website also have some features those are saying below :
+
+
+
+
 
 1. If you aren't log-in then you can only see home and explore option in the menubar.Then if you want given booking any car you can't you are goin to login page then if you alreade regester then you can login otherwise 1st of all you can do login.After the login you can go where are you want to went.
 
@@ -19,3 +25,21 @@ This website based on car seeling.Ther are are more companies car's and if you w
 7. In the dashboard for a admin you can see make admin option from there are you can make admin from all users.and also have add product option from there are a admin can add a product . 
 
 So, that is the briefly discussion in this website. This description you can see visually in the live site. 
+
+
+
+
+-------------------------------------------  Thank You  -----------------------------------------
+
+
+
+
+![screenshot (15)](https://user-images.githubusercontent.com/76746810/142572592-5375c1af-53df-451a-b1ba-bde8aeec4484.png)
+
+
+
+
+
+![screenshot (14)](https://user-images.githubusercontent.com/76746810/142572625-6b3bd21a-a194-406c-9e5a-a1d6d17df8eb.png)
+
+
