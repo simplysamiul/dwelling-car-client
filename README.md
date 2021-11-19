@@ -1,6 +1,6 @@
 # Dwelling-Car's
 
-[Live-Link](https://dwelling-car.web.app/dashboard)
+[Live-Link](https://dwelling-car.web.app/)
 
 #Details : 
 
