@@ -19,3 +19,22 @@ This website based on car seeling.Ther are are more companies car's and if you w
 7. In the dashboard for a admin you can see make admin option from there are you can make admin from all users.and also have add product option from there are a admin can add a product . 
 
 So, that is the briefly discussion in this website. This description you can see visually in the live site. 
+
+
+
+
+
+-------------------------------------------  Thank You  -----------------------------------------
+
+
+
+
+![screenshot (15)](https://user-images.githubusercontent.com/76746810/142572592-5375c1af-53df-451a-b1ba-bde8aeec4484.png)
+
+
+
+
+
+![screenshot (14)](https://user-images.githubusercontent.com/76746810/142572625-6b3bd21a-a194-406c-9e5a-a1d6d17df8eb.png)
+
+
