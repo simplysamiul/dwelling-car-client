@@ -29,7 +29,7 @@ function MyVerticallyCenteredModal(props) {
       date : new Date().toLocaleDateString()
     };
     // Send data to the server
-    fetch("https://guarded-taiga-19552.herokuapp.com/orders",{
+    fetch("https://dwelling-car-server.up.railway.app/orders",{
       method: "POST",
       headers:{
         "content-type" : "application/json"
@@ -44,7 +44,7 @@ function MyVerticallyCenteredModal(props) {
         props.onHide();
       }
     });
-  };
+  };y
   const carPrice = `Price : $ ${price} /-`
     return (
       <Modal

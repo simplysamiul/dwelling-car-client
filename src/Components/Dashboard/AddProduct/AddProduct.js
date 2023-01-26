@@ -10,7 +10,7 @@ const AddProduct = () => {
     const [loading,setLoading] = useState(false);
     const onSubmit = data =>{
         setLoading(true);
-        fetch("https://guarded-taiga-19552.herokuapp.com/store/more",{
+        fetch("https://dwelling-car-server.up.railway.app/store/more",{
             method:"POST",
             headers:{
                 "content-type" : "application/json"

@@ -39,7 +39,7 @@ const Orders = () => {
     const { user } = useAuth();
     const [orders, setOrders] = useState([]);
     useEffect(()=>{
-        const url = `https://guarded-taiga-19552.herokuapp.com/orders/order?email=${user.email}`
+        const url = `https://dwelling-car-server.up.railway.app/orders/order?email=${user.email}`
         fetch(url)
         .then(res => res.json())
         .then(data => setOrders(data))
@@ -47,7 +47,7 @@ const Orders = () => {
 
     // Delete orders
     const handeldeleteOrder = id =>{
-      const url = `https://guarded-taiga-19552.herokuapp.com/orders/${id}`
+      const url = `https://dwelling-car-server.up.railway.app/orders/${id}`
       fetch(url, {
         method:"DELETE"
       })

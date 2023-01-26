@@ -39,7 +39,7 @@ const ManageProducts = () => {
     const [carLoading, setCarLoading] = useState(false);
     useEffect(()=>{
         setCarLoading(true);
-        fetch("https://guarded-taiga-19552.herokuapp.com/store/more")
+        fetch("https://dwelling-car-server.up.railway.app/store/more")
         .then(res => res.json())
         .then(data => {
             setCarLoading(false);
@@ -48,7 +48,7 @@ const ManageProducts = () => {
     },[]);
     // Handel Product delete
     const handelDeletecar = id =>{
-        fetch(`https://guarded-taiga-19552.herokuapp.com/store/more/${id}`, {
+        fetch(`https://dwelling-car-server.up.railway.app/store/more/${id}`, {
             method : "DELETE"
         })
         .then(res => res.json())

@@ -39,7 +39,7 @@ const AllOrders = () => {
     const [orderLoading, setOrderLoading] = useState(false);
     useEffect(()=>{
         setOrderLoading(true);
-        fetch("https://guarded-taiga-19552.herokuapp.com/orders")
+        fetch("https://dwelling-car-server.up.railway.app/orders")
         .then(res => res.json())
         .then(data => {
             setOrderLoading(false);

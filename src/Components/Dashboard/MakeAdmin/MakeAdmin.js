@@ -12,7 +12,7 @@ const MakeAdmin = () => {
         setAdminLoading(true);
         const email = data.email;
         const user = {email};
-        fetch("https://guarded-taiga-19552.herokuapp.com/users/admin", {
+        fetch("https://dwelling-car-server.up.railway.app/users/admin", {
             method: "PUT",
             headers: {
                 "content-type" : "application/json"

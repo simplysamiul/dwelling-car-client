@@ -15,7 +15,7 @@ const CarDetails = () => {
     const {car_name, engine, mileage, Transmission, car_img, price, short_desk, color, } = details;
 
     useEffect(()=>{
-        const url = `https://guarded-taiga-19552.herokuapp.com/store/${id}`;
+        const url = `https://dwelling-car-server.up.railway.app/store/${id}`;
         fetch(url)
         .then(res => res.json())
         .then(data => setDetails(data))

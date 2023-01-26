@@ -72,7 +72,7 @@ const useFirebase = () =>{
 
     // Check admin 
     useEffect(()=>{
-        const url = `https://guarded-taiga-19552.herokuapp.com/users/${user.email}`
+        const url = `https://dwelling-car-server.up.railway.app/users/${user.email}`
         fetch(url)
         .then(res => res.json())
         .then(data => setAdmin(data.admin))
@@ -107,7 +107,7 @@ const useFirebase = () =>{
     // Send User info in database
     const saveUser = (email, displayName, method) =>{
         const user = {email, displayName};
-        fetch("https://guarded-taiga-19552.herokuapp.com/users", {
+        fetch("https://dwelling-car-server.up.railway.app/users", {
             method: method,
             headers : {
                 "content-type" : "application/json"

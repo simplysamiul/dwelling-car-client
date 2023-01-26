@@ -10,7 +10,7 @@ const Review = () => {
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data =>{
         setReviewLoading(true);
-        fetch("https://guarded-taiga-19552.herokuapp.com/reviews", {
+        fetch("https://dwelling-car-server.up.railway.app/reviews", {
             method: "POST",
             headers :{
                 "content-type" : "application/json"

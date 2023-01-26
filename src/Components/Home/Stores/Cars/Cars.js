@@ -5,7 +5,7 @@ import './Cars.css';
 const Cars = () => {
     const [cars, setCars] = useState([]);
     useEffect(()=>{
-    fetch("https://guarded-taiga-19552.herokuapp.com/store")
+    fetch("https://dwelling-car-server.up.railway.app/store")
     .then(res => res.json())
     .then(data => setCars(data))
     },[]);
