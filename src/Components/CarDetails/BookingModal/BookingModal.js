@@ -44,7 +44,7 @@ function MyVerticallyCenteredModal(props) {
         props.onHide();
       }
     });
-  };y
+  };
   const carPrice = `Price : $ ${price} /-`
     return (
       <Modal
